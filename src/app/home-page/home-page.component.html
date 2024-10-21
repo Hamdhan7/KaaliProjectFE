@@ -1,4 +1,5 @@
-<div class="body">
+<div class="body"
+>
   <app-nav-bar></app-nav-bar>
   <div class="section-heading">
     <div class="heading-row-1">
@@ -18,7 +19,7 @@
   <div class="section-para">
     We collaborate with businesses of all sizes to create tailored apps and software that truly make an impact.
   </div>
-  <!--  design section start-->
+  <!--  design section-->
   <div class="design-section">
     <img class="design-section-bg-img" src="assets/Rectangle%206designSectionBgBlob.svg">
     <div class="design-section-overlay">
@@ -36,8 +37,7 @@
       </div>
     </div>
   </div>
-  <!--design section end-->
-  <!--  engineering section start-->
+  <!--  engineering section-->
   <div class="engineering-section">
     <img class="engineering-section-bg-img" src="assets/Rectangle%207engineeringBgSvg.svg">
     <div class="engineering-section-overlay">
@@ -56,8 +56,7 @@
       </div>
     </div>
   </div>
-  <!--  engineering section end-->
-  <!--AI section starts-->
+  <!--AI section -->
   <div class="ai-section">
     <img class="ai-section-bg-img" src="assets/Rectangle%208aisectionBgImgSvg.svg">
     <div class="ai-section-overlay">
@@ -75,10 +74,8 @@
       </div>
     </div>
   </div>
-  <!--  ai section ends-->
-  <!--  projects section starts-->
-  <!--  project section ends-->
-  <!--  client testimonial section starts-->
+  <!--  projects section-->
+  <!--  client testimonial section -->
   <div class="client-section-container">
 
     <div class="matrices-container">
@@ -200,9 +197,7 @@
 
 
   </div>
-  <!--  client testimpnial section ends-->
-  <!--  project portfolio section starts-->
-
+  <!--  project portfolio section-->
   <div class="portfolio-section-container">
     <div class="portfolio-section-content">
       <div class="portfolio-section-heading">
@@ -222,7 +217,7 @@
       </div>
     </div>
   </div>
-
+  <!-- contact us section  -->
   <div class="contact-us-section-container">
     <div class="contact-us-form-container">
       <div class="lets-talk-heading">
@@ -230,7 +225,7 @@
       </div>
       <div class="form-section">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-          <div class="form-group"x>
+          <div class="form-group">
             <div class="name-phone-number-container">
               <div class="form-name-container">
                 <mat-form-field appearance="fill" class="full-width">
@@ -291,8 +286,44 @@
       </div>
 
     </div>
-
   </div>
-
-  <!--  project portfolio section ends-->
+  <footer>
+    <div class="footer-section-container">
+      <div class="footer-heading-text">
+        DarxForge
+      </div>
+      <div class="footer-links-section">
+        <div class="links-part-1">
+          <div class="about-us-links">
+            <div class="about-us-heading">About Us</div>
+            <a routerLink="/services" routerLinkActive="active">Services</a>
+            <a routerLink="/work" routerLinkActive="active">Work</a>
+            <a routerLink="/faqs" routerLinkActive="active">FAQs</a>
+          </div>
+          <div class="connect-with-us-links">
+            <div class="connect-with-us-heading">Connect With Us</div>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="links-part-2">
+          <div class="quick-links-section">
+            <div class="quick-links-section-heading">Quick Links</div>
+            <a routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+            <a routerLink="/terms-of-service" routerLinkActive="active">Terms of Service</a>
+            <a routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a>
+          </div>
+          <div class="support-section">
+            <a href="mailto:support@darkxforge.com">support&#64;darkxforge.com</a>
+            <a href="tel:+94774399432">Phone: +94 77 43 99 432</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-text">
+        © 2024 DarxForge. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 </div>
