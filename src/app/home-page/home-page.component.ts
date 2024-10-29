@@ -120,10 +120,10 @@ export class HomePageComponent implements OnInit {
         const container = entry.target;
         if (entry.isIntersecting) {
           this.renderer.addClass(container, 'slide-up');
-          this.renderer.removeClass(container, 'slide-down');
+          // this.renderer.removeClass(container, 'slide-down');
         } else {
           this.renderer.removeClass(container, 'slide-up');
-          this.renderer.addClass(container, 'slide-down');
+          // this.renderer.addClass(container, 'slide-down');
         }
       });
     };
