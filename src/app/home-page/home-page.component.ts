@@ -197,6 +197,8 @@ export class HomePageComponent implements OnInit {
 
 
   centerVideo(video: HTMLElement) {
+    const isMobile = window.innerWidth <= 480; // Adjust breakpoint as needed
+
     const container = this.el.nativeElement.querySelector('.portfolio-section-video-webM');
     const containerOuter = this.el.nativeElement.querySelector('.portfolio-section-video-container');
 
@@ -207,17 +209,20 @@ export class HomePageComponent implements OnInit {
 
     videos.forEach((vid: HTMLElement) => {
       if (vid === video) {
-        // this.renderer.setStyle(containerOuter,  'animation', 'scroll 20s linear infinite');
-        this.renderer.setStyle(vid, 'transform', `scale(1.2)`);
-        this.renderer.setStyle(vid, 'z-index', '1');
+        if (!isMobile) {
+          // Apply styles only on non-mobile devices
+          this.renderer.setStyle(vid, 'transform', `scale(1.2)`);
+          this.renderer.setStyle(vid, 'z-index', '1');
+        } else {
+          this.renderer.setStyle(vid, 'transform', `scale(1.3)`);
+          this.renderer.setStyle(vid, 'z-index', '1');
+        }
       } else {
         const currentIndex = Array.from(videos).indexOf(vid);
-        const scale = currentIndex === 0 ? 0.6 : 0.8;
-        const xOffset = currentIndex === 0 ? '10px' : '0'; // Adjust the x-offset as needed
-        currentIndex === 1
+        const scale = isMobile ? 1 : currentIndex === 0 ? 0.6 : 0.8;
+        const xOffset = isMobile ? '0' : currentIndex === 0 ? '10px' : '0';
         this.renderer.setStyle(vid, 'transform', `translateX(${xOffset}) scale(${scale})`);
-        this.renderer.setStyle(vid, 'z-index', '0');
-
+        this.renderer.setStyle(vid, 'z-index', isMobile ? 'auto' : '0');
       }
     });
   }

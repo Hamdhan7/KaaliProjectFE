@@ -9,6 +9,9 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
+.navbar{
+}
+
 .section-heading {
   display: flex;
   width: 100%;
@@ -1193,10 +1196,36 @@
 
   }
 
+  .portfolio-section-content{
+    gap: 15vw;
+  }
+  .portfolio-section-video-webM{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw; /* Adds space between videos */
+  }
+
+  .portfolio-video {
+    width: 75%;
+    height: auto;
+  }
+
+  .portfolio-navigation-container{
+    display: none;
+  }
   .portfolio-section-container{
     margin-top: 6vw;
     border-radius: 5vw;
-
+  }
+  .portfolio-section-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .name-phone-number-container{
     flex-direction: column;
