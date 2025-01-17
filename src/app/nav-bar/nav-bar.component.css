@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5vw;
-  backdrop-filter: blur(151.10000610351562px);
+  /*backdrop-filter: blur(151.10000610351562px);*/
   padding: 1vw 2vw 0vw 2vw;
 }
 
@@ -90,11 +90,15 @@
 
 .scroll-to-top-icon img,
 .social-media-links img {
-  /*transition: transform 0.3s ease-in-out;*/
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-media-links img:hover {
-  /*transform: scale(1.2); !* Slightly enlarge social icons on hover *!*/
+  transform: scale(1.2); /* Slightly enlarge social icons on hover */
+}
+
+.scroll-to-top-icon img:hover {
+  transform: scale(1.3); /* Slightly enlarge social icons on hover */
 }
 
 

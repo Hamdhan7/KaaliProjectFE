@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HomePageComponent} from "./home-page/home-page.component";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {NavBarComponent} from "./nav-bar/nav-bar.component";
+import {FooterComponent} from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomePageComponent,MatSlideToggleModule],
+  imports: [RouterOutlet, HomePageComponent, MatSlideToggleModule, NavBarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

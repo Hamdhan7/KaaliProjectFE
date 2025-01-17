@@ -7,6 +7,7 @@ import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import { MatInputModule } from "@angular/material/input"; // Add this import
 import { MatButtonModule } from "@angular/material/button"; // Add this
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-home-page',
@@ -20,7 +21,9 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
     MatInputModule, // Add this to the imports array
     MatButtonModule, // Add this
     MatFormField,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLinkActive,
+    RouterLink
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
@@ -41,6 +44,16 @@ export class HomePageComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       description: ['', Validators.required]
     });
+  }
+
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 
   onSubmit(): void {
@@ -120,10 +133,8 @@ export class HomePageComponent implements OnInit {
         const container = entry.target;
         if (entry.isIntersecting) {
           this.renderer.addClass(container, 'slide-up');
-          // this.renderer.removeClass(container, 'slide-down');
         } else {
           this.renderer.removeClass(container, 'slide-up');
-          // this.renderer.addClass(container, 'slide-down');
         }
       });
     };
