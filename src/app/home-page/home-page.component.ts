@@ -8,23 +8,25 @@ import { MatInputModule } from "@angular/material/input"; // Add this import
 import { MatButtonModule } from "@angular/material/button"; // Add this
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {FooterComponent} from "../footer/footer.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [
-    NavBarComponent,
-    MatSlideToggle,
-    MatCard,
-    MatCardTitle,
-    MatCardContent,
-    MatInputModule, // Add this to the imports array
-    MatButtonModule, // Add this
-    MatFormField,
-    ReactiveFormsModule,
-    RouterLinkActive,
-    RouterLink
-  ],
+    imports: [
+        NavBarComponent,
+        MatSlideToggle,
+        MatCard,
+        MatCardTitle,
+        MatCardContent,
+        MatInputModule, // Add this to the imports array
+        MatButtonModule, // Add this
+        MatFormField,
+        ReactiveFormsModule,
+        RouterLinkActive,
+        RouterLink,
+        FooterComponent
+    ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
