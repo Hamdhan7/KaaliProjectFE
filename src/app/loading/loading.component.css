@@ -13,7 +13,7 @@
   font-weight: bold;
   color: #f0eaFF; /* Soft glowing text color */
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
   white-space: nowrap; /* Ensures the text stays on one line */
   text-align: center;
   animation: zoomIn 2.5s ease-in-out infinite; /* Adjusted duration for a smoother effect */
