@@ -6,3 +6,51 @@
   padding: 10px 20px;
   z-index: 1000;
 }
+
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Define keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Define keyframes for fade-out effect */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Make sure the loading screen covers the entire viewport */
+.loading-screen {
+  background-color: rgba(0, 0, 0, 0.7); /* Dim the background */
+}
+
+
+/* Add a rule to remove any default margins/padding on body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main content */
+.main-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

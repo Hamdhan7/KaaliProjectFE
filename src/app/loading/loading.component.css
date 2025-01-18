@@ -1,0 +1,36 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; /* Black background for contrast */
+  overflow: hidden;
+}
+
+.loading-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(3rem, 10vw, 12rem); /* Dynamically scales between min 3rem and max 12rem */
+  font-weight: bold;
+  color: #f0eaFF; /* Soft glowing text color */
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  white-space: nowrap; /* Ensures the text stays on one line */
+  text-align: center;
+  animation: zoomIn 2.5s ease-in-out infinite; /* Adjusted duration for a smoother effect */
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5) translateZ(-500px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) translateZ(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}

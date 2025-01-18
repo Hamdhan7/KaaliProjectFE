@@ -1,6 +1,15 @@
-<div class="navbar">
+<div class="navbar"  *ngIf="showMainContent" [ngClass]="{ 'fade-in': showMainContent }">
   <app-nav-bar></app-nav-bar>
 </div>
-<router-outlet></router-outlet> <!-- Dynamic content -->
 
-<!--<app-footer></app-footer> &lt;!&ndash; Footer remains static &ndash;&gt;-->
+<div class="loading-screen" *ngIf="isLoading" [ngClass]="{ 'fade-out': !isLoading }">
+  <app-loading></app-loading>
+</div>
+
+<!-- Main content is conditionally displayed with fade-in -->
+<div class="main-content" *ngIf="showMainContent" [ngClass]="{ 'fade-in': showMainContent }">
+  <router-outlet></router-outlet>
+</div>
+
+<!--<router-outlet></router-outlet> &lt;!&ndash; Dynamic content &ndash;&gt;-->
+
