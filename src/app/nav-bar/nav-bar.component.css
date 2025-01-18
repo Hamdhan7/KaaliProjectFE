@@ -133,6 +133,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 2vw 2vw 0vw 2vw;
+    width: 90%;
 
   }
   .notch{
