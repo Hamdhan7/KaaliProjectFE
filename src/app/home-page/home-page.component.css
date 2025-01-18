@@ -76,21 +76,34 @@
   padding-right: 1rem;
   margin: 0;
 }
-
 .design {
-
-  background: linear-gradient(129deg, #61A9E9 33.77%, #ECECEC 70.43%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin: 0;
   font-size: 8vw;
-
+  background: linear-gradient(129deg, #61A9E9 30%, #b6b6b6 50%, #fdfdfd 70%);
+  background-size: 300%; /* Extend the gradient for smooth animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Keep text transparent */
+  animation: shineEffect 9s infinite ease-in-out; /* Shimmering effect */
 }
+
+/* Keyframes for shining effect */
+@keyframes shineEffect {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .engineering {
   background: linear-gradient(182deg, #000 31.19%, rgba(0, 0, 0, 0.00) 111.55%);
@@ -121,19 +134,33 @@
 
 .ai {
   background: linear-gradient(91deg, #F00 5.06%, #FF00C7 31.35%, #020ef4 85.64%);
+  background-size: 200%; /* Extend background size for animation */
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Poppins;
+  -webkit-text-fill-color: transparent; /* Transparent text to show gradient */
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   padding-right: 1vw;
   margin: 0;
   font-size: 8vw;
-
-
+  animation: gradientMove 4s infinite ease-in-out; /* Gradient animation */
 }
+
+/* Keyframes for gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .mastery {
   color: #585858;
