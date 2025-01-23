@@ -15,14 +15,25 @@
 
 }
 
+.nav-logo-text{
+  color: #FF6F01;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
 .notch{
   display: flex;
   padding: 0.5vw 0.7vw 0.5vw 0.8vw;
   align-items: center;
   gap: 0.6vw;
   border-radius: 32px;
-  background: #0F0F0F;
-  box-shadow: 0px 4px 43.9px 0px rgba(40, 39, 39, 0.19);
+  background: #151515;
+  /*box-shadow: 0px 4px 43.9px 0px rgba(40, 39, 39, 0.19);*/
   font-size: 0.75vw;
   font-family: Poppins;
   font-style: normal;
@@ -50,13 +61,13 @@
   /*color: #E4E4E4;*/
 
   text-align: center;
-  color: #bbb;
+  color: #C1BBB6;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
 }
 .services-text{
-  color: #E4E4E4;
+  color: #C1BBB6;
   text-align: center;
   /*color: #bbb;*/
   transition: all 0.3s ease-in-out;
@@ -65,7 +76,7 @@
 .about-text{
   /*color: #E4E4E4;*/
   text-align: center;
-  color: #bbb;
+  color: #C1BBB6;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -73,9 +84,9 @@
 .work-text:hover,
 .services-text:hover,
 .about-text:hover {
-  color: #fff; /* Lighter text */
+  color: #FF6F00; /* Lighter text */
   font-weight: bold; /* Make the text bolder */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Lighted-up effect */
+  text-shadow: 0 0 10px rgb(255, 111, 0); /* Lighted-up effect */
 }
 
 .work-text:hover ~ .services-text,

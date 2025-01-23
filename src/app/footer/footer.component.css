@@ -5,13 +5,13 @@
   flex-direction: column;
   text-align: center;
   border-radius: 5vw 5vw 0 0;
-  background: #14152F;
+  background: #151515;
   margin-top: 3vw; /* Allow footer to adapt to flexbox */
   padding: 5vw 2vw;
 }
 
 .footer-heading-text{
-  color: #EFE8FF;
+  color: #FF6F01;
   text-align: center;
   font-family: Poppins;
   font-size: 1.5vw;
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  color: #F0EAFF; /* Default text color for the container */
+  color: #797979; /* Default text color for the container */
   font-family: Poppins, sans-serif; /* Ensure fallback font for safety */
   font-size: 0.8125rem;
   font-style: normal;
@@ -55,7 +55,7 @@
 }
 
 .about-us-links a:hover {
-  color: #E6D8FF; /* Lighter shade for hover effect */
+  color: #FF6F01; /* Lighter shade for hover effect */
   text-decoration: underline; /* Optional: Add underline on hover */
 }
 
@@ -95,7 +95,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  color: #F0EAFF;
+  color: #797979;
   font-family: Poppins;
   font-size: 0.8125rem;
   font-style: normal;
@@ -105,7 +105,7 @@
 }
 .connect-with-us-links a {
   padding-top: 0.8vw;
-  color: #F0EAFF;
+  color: #797979;
   font-family: Poppins;
   font-size: 0.8125rem;
   font-style: normal;
@@ -124,7 +124,7 @@
 
 .support-section a{
   padding-bottom: 0.8vw;
-  color: #F0EAFF;
+  color: #797979;
   font-family: Poppins;
   font-size: 0.8125rem;
   font-style: normal;
@@ -146,7 +146,7 @@
   text-align: left;
   justify-content: flex-start;
   font-weight: 600;
-  color: #F0EAFF;
+  color: #797979;
   font-family: Poppins;
   font-size: 0.8125rem;
   font-style: normal;
@@ -155,7 +155,7 @@
 }
 .quick-links-section a{
   padding-top: 0.8vw;
-  color: #F0EAFF;
+  color: #797979;
   font-family: Poppins;
   font-size: 0.8125rem;
   font-style: normal;
@@ -166,12 +166,12 @@
 }
 
 .quick-links-section a:hover {
-  color: #E6D8FF; /* Lighter shade for hover effect */
+  color: #FF6F01; /* Lighter shade for hover effect */
   text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 .copy-right-text{
-  color: #B8AED0;
+  color: #797979;
   text-align: center;
   font-family: Poppins;
   font-size: 0.8125rem;
@@ -182,12 +182,12 @@
 
 .footer-nav a {
   text-decoration: none;
-  color: #333; /* Default link color */
+  color: #797979; /* Default link color */
   transition: color 0.3s ease;
 }
 
 .footer-nav a:hover {
-  color: #007bff; /* Color on hover */
+  color: #FF6F01; /* Color on hover */
 }
 
 

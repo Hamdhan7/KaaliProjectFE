@@ -1,0 +1,33 @@
+<svg width="772" height="251" viewBox="0 0 772 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="132.437" cy="125.32" rx="90.6487" ry="86" transform="rotate(45 132.437 125.32)" fill="#FFE3CD"/>
+<ellipse cx="258.666" cy="125.32" rx="91.2297" ry="86" transform="rotate(45 258.666 125.32)" fill="#D49D74"/>
+<rect x="115" y="109.987" width="20" height="57" fill="#2B2C3C"/>
+<rect x="144" y="81.9871" width="20" height="85" fill="#2B2C3C"/>
+<rect x="208" y="102.987" width="20" height="54" transform="rotate(-90 208 102.987)" fill="#2B2C3C"/>
+<rect x="207" y="134.987" width="20" height="99" transform="rotate(-90 207 134.987)" fill="#2B2C3C"/>
+<rect x="207" y="166.987" width="20" height="85" transform="rotate(-90 207 166.987)" fill="#2B2C3C"/>
+<rect width="20" height="17" transform="matrix(0 -1 -1 0 320 166.987)" fill="#2B2C3C"/>
+<rect x="272" y="102.987" width="20" height="35" transform="rotate(-90 272 102.987)" fill="#2B2C3C"/>
+<rect x="86" y="146.987" width="20" height="20" fill="#2B2C3C"/>
+<ellipse cx="385.307" cy="125.32" rx="91.2297" ry="86" transform="rotate(45 385.307 125.32)" fill="#DF9054"/>
+<circle cx="361" cy="124.987" r="13" fill="#2B2C3C"/>
+<path d="M335 156.987C335 149.807 340.82 143.987 348 143.987H374C381.18 143.987 387 149.807 387 156.987V166.987H335V156.987Z" fill="#2B2C3C"/>
+<rect x="399" y="82.9871" width="42" height="20" fill="#2B2C3C"/>
+<rect x="399" y="114.987" width="32" height="20" fill="#2B2C3C"/>
+<rect x="399" y="146.987" width="20" height="20" fill="#2B2C3C"/>
+<ellipse cx="511.948" cy="125.32" rx="91.2297" ry="86" transform="rotate(45 511.948 125.32)" fill="#F3700C"/>
+<g filter="url(#filter0_b_210_560)">
+<ellipse cx="638.589" cy="125.32" rx="91.2297" ry="86" transform="rotate(45 638.589 125.32)" fill="#DC8A4C" fill-opacity="0.32"/>
+</g>
+<rect x="489" y="134.987" width="20" height="48" transform="rotate(-90 489 134.987)" fill="#2B2C3C"/>
+<rect x="473" y="102.987" width="20" height="80" transform="rotate(-90 473 102.987)" fill="#2B2C3C"/>
+<rect x="503" y="166.987" width="20" height="20" transform="rotate(-90 503 166.987)" fill="#2B2C3C"/>
+<defs>
+<filter id="filter0_b_210_560" x="466.435" y="-46.8333" width="344.307" height="344.307" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="41.75"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_210_560"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_210_560" result="shape"/>
+</filter>
+</defs>
+</svg>
