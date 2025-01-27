@@ -2,7 +2,7 @@
   position: fixed; /* Fixes the navbar at the top of the page */
   top: 0;
   left: 0;
-  width: 100%; /* Ensures the navbar spans the full width of the viewport */
+  width: 98%; /* Ensures the navbar spans the full width of the viewport */
   padding: 10px 20px;
   z-index: 1000;
 }
@@ -44,7 +44,7 @@
 
 /* Add a rule to remove any default margins/padding on body */
 body {
-  margin: 0;
+  margin: 0rem 2rem 0rem 2rem;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
