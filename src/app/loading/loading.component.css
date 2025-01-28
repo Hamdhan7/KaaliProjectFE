@@ -5,6 +5,7 @@
   height: 100vh;
   background-color: #000; /* Black background for contrast */
   overflow: hidden;
+  margin: 0px -12px 0px -12px;
 }
 
 .loading-text {
