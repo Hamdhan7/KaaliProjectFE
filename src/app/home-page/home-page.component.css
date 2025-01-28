@@ -1567,6 +1567,26 @@
   .stats-container p{
     font-size: 1rem;
   }
+}
 
+@media (max-width: 480px) {
 
+  .follow-us-container {
+    border-radius: 22px;
   }
+
+  .stats-section{
+    margin-top: 11rem;
+  }
+
+  .stats-container{
+    gap: 1rem;
+    margin-top: -11rem;
+  }
+  .stats-container h1{
+    font-size: 1.6rem;
+  }
+  .stats-container p{
+    font-size: 0.6rem;
+  }
+}

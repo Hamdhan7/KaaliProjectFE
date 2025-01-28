@@ -10,7 +10,7 @@
 
 .loading-text {
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(2rem, 8vw, 10rem); /* Dynamically scales between min 3rem and max 12rem */
+  font-size: clamp(1.5rem, 8vw, 10rem); /* Dynamically scales between min 3rem and max 12rem */
   font-weight: bold;
   color: #444762; /* Soft glowing text color */
   text-transform: uppercase;
