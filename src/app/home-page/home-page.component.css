@@ -1260,7 +1260,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 63px;
+  border-radius: 60px;
   background: #000000;
 
 }
@@ -1525,7 +1525,7 @@
   }
 
   .follow-us-container{
-    border-radius: 12vw;
+    border-radius: 8vw;
     margin-bottom: 0vw;
   }
 
@@ -1545,3 +1545,28 @@
 ::ng-deep .mat-raised-button {
   background-color: #ff9800;
 }
+
+
+@media (max-width: 768px) {
+
+  .follow-us-container {
+    border-radius: 28px;
+  }
+
+  .stats-section{
+    margin-top: 5rem;
+  }
+
+  .stats-container{
+    gap: 1rem;
+    margin-top: -11rem;
+  }
+  .stats-container h1{
+    font-size: 2.5rem;
+  }
+  .stats-container p{
+    font-size: 1rem;
+  }
+
+
+  }
