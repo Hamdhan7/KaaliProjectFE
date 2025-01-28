@@ -558,7 +558,7 @@
   color: #797979;
   text-align: center;
   font-family: Roboto;
-  font-size: 8vw;
+  font-size: 7vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1367,7 +1367,7 @@
   }
 
   .design-section-content{
-    padding: 0vw 2vw 1vw 0vw;
+    padding: 2vw 2vw 1vw 0vw;
   }
 
   .design-section-heading{
@@ -1376,12 +1376,12 @@
 
 
   .engineering-section-overlay {
-    top: 57%;
+    top: 60%;
   }
 
   .engineering-section-content{
     padding: 0vw 0vw 0vw 0vw;
-    margin-top: -7vw;
+    margin-top: -9vw;
   }
 
   .engineering-section-sub-text{
