@@ -567,6 +567,31 @@
   padding: 0vw 0vw 0vw 0vw;
 }
 
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, 0); /* Cursor */
+  width: 0;
+  animation:
+    typing 3s ease-in-out forwards ,
+    blink-caret 0.75s ease-in-out ;
+  will-change: width;
+}
+
+.design-section-heading-line-2 .typing-animation {
+  animation-delay: 3s; /* Start after first line finishes */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
 .design-section-heading-line-1 {
   margin: 0;
 }
@@ -631,7 +656,7 @@
 }
 
 .engineering-section-heading {
-  color: #797979;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -645,6 +670,20 @@
   letter-spacing: 0.01vw;
   margin: 0;
   padding: 0vw 0vw 2vw 0vw;
+  animation: glow 3s infinite alternate ease-in-out;
+
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0), 0 0 7px rgba(255, 255, 255, 0);
+  }
+  50% {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.75), 0 0 12px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0), 0 0 7px rgba(255, 255, 255, 0);
+  }
 }
 
 .engineering-section-heading-line-1 {
