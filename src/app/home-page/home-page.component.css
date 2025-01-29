@@ -573,14 +573,17 @@
   white-space: nowrap;
   border-right: 2px solid rgba(255, 255, 255, 0); /* Cursor */
   width: 0;
-  animation:
-    typing 3s ease-in-out forwards ,
-    blink-caret 0.75s ease-in-out ;
-  will-change: width;
+  transition: width 0.3s ease; /* Smooth transition for width change */
 }
 
 .design-section-heading-line-2 .typing-animation {
   animation-delay: 3s; /* Start after first line finishes */
+}
+
+.design-section-overlay:hover .typing-animation {
+  animation:
+    typing 3s ease-in-out forwards, /* Typing animation when hovered */
+    blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -591,6 +594,7 @@
 @keyframes blink-caret {
   50% { border-color: transparent; }
 }
+
 
 .design-section-heading-line-1 {
   margin: 0;
@@ -670,20 +674,12 @@
   letter-spacing: 0.01vw;
   margin: 0;
   padding: 0vw 0vw 2vw 0vw;
-  animation: glow 3s infinite alternate ease-in-out;
-
+  transition: text-shadow 0.3s ease-in-out; /* Smooth transition for glow */
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0), 0 0 7px rgba(255, 255, 255, 0);
-  }
-  50% {
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.75), 0 0 12px rgba(255, 255, 255, 0.75);
-  }
-  100% {
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0), 0 0 7px rgba(255, 255, 255, 0);
-  }
+/* Glow effect on hover */
+.engineering-section-overlay:hover .engineering-section-heading {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.75), 0 0 32px rgba(255, 255, 255, 0.75);
 }
 
 .engineering-section-heading-line-1 {
