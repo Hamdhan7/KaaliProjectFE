@@ -550,6 +550,7 @@
   transform: translate(-50%, -50%); /* Center the overlay content */
 }
 
+/* Default styles for mobile (smaller screens) */
 .design-section-heading {
   display: flex;
   flex-direction: column;
@@ -558,7 +559,7 @@
   color: #797979;
   text-align: center;
   font-family: Roboto;
-  font-size: 7vw;
+  font-size: 7vw; /* Adjust font size for mobile */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -567,30 +568,32 @@
   padding: 0vw 0vw 0vw 0vw;
 }
 
+/* Typing animation (for both mobile and large screens) */
 .typing-animation {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid rgba(255, 255, 255, 0); /* Cursor */
-  width: 0;
+  width: 100%; /* Ensure text is fully visible by default */
   transition: width 0.3s ease; /* Smooth transition for width change */
 }
 
-.design-section-heading-line-2 .typing-animation {
-  animation-delay: 3s; /* Start after first line finishes */
+/* On hover for large screens, apply typing effect */
+@media (min-width: 768px) {
+  .design-section-overlay:hover .typing-animation {
+    animation:
+      typing 3s ease-in-out forwards, /* Typing animation on hover */
+      blink-caret 0.75s step-end infinite;
+  }
 }
 
-.design-section-overlay:hover .typing-animation {
-  animation:
-    typing 3s ease-in-out forwards, /* Typing animation when hovered */
-    blink-caret 0.75s step-end infinite;
-}
-
+/* Keyframes for typing effect */
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
 }
 
+/* Keyframes for blinking cursor */
 @keyframes blink-caret {
   50% { border-color: transparent; }
 }
@@ -1384,7 +1387,8 @@
   }
 
   .design-section-overlay {
-    top: 53%;
+    top: 51%;
+    gap: 4vw;
   }
 
   .design-section-bg-img {
@@ -1402,7 +1406,7 @@
   }
 
   .design-section-content{
-    padding: 2vw 2vw 1vw 0vw;
+    padding: 0vw 0vw 0vw 0vw;
   }
 
   .design-section-heading{
