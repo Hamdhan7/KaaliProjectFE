@@ -128,7 +128,15 @@
   justify-content: space-between;
   gap: 0.5vw;
 }
+.social-media-links img{
+  width: 2vw;
+  height: auto;
+}
 
+.social-media-links a{
+  width: 2vw;
+  height: auto;
+}
 @media (max-width: 768px) {
   .notch{
     padding: 1vw 3vw 1vw 3vw;
@@ -168,13 +176,14 @@
   .social-media-links{
     gap: 1.5vw;
   }
-  .instagram-icon{
-    width: 4vw;
+
+  .social-media-links img{
+    width: 5vw;
+    height: auto;
   }
-  .facebook-icon{
-    width: 4vw;
+  .social-media-links a{
+    width: 5vw;
+    height: auto;
   }
-  .call-icon{
-    width: 4vw;
-  }
+
 }
