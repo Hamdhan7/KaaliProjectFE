@@ -8,16 +8,11 @@
   margin: 0px -12px 0px -12px;
 }
 
-.loading-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 8vw, 10rem); /* Dynamically scales between min 3rem and max 12rem */
-  font-weight: bold;
-  color: #444762; /* Soft glowing text color */
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  white-space: nowrap; /* Ensures the text stays on one line */
-  text-align: center;
-  animation: zoomIn 2.5s ease-in-out infinite; /* Adjusted duration for a smoother effect */
+.loading-image {
+  max-width: 80vw; /* Makes it responsive */
+  max-height: 50vh; /* Prevents it from becoming too large */
+  object-fit: contain;
+  animation: zoomIn 2.5s ease-in-out infinite; /* Keeps the animation */
   opacity: 0;
 }
 
